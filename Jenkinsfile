@@ -1,4 +1,4 @@
-@Library('github.com/rupalibehera/osio-pipeline@java_support') _
+@Library('github.com/fabric8io/osio-pipeline@master') _
 def utils = new io.openshift.Utils()
 
 osio {
@@ -6,7 +6,7 @@ osio {
   config runtime: 'java', version: '1.8.1'
 
   ci {
-    echo "Running CI build............"
+    echo "Running CI build............."
 
 
     def resources = processTemplate(params: [
